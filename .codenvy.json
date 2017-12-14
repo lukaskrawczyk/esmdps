@@ -1,0 +1,153 @@
+{
+  "v": "4.0",
+  "name": "esmdps",
+  "workspace": {
+    "defaultEnv": "default",
+    "environments": {
+      "default": {
+        "machines": {
+          "dev-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {},
+            "volumes": {},
+            "installers": [
+              "org.eclipse.che.exec",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.ssh"
+            ],
+            "env": {}
+          }
+        },
+        "warnings": [],
+        "recipe": {
+          "location": "lkrawczyk/esmdps",
+          "type": "dockerimage"
+        }
+      }
+    },
+    "projects": [
+      {
+        "links": [],
+        "name": "openmp_003",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_003.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_003",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "openmp_002",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_002.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_002",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "openmp_001",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_001.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_001",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      }
+      {
+        "links": [],
+        "name": "mpi_003",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/mpi_003.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/mpi_003",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "mpi_002",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/mpi_002.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/mpi_002",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "mpi_001",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/mpi_001.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/mpi_001",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      }
+    ],
+    "name": "esmdps",
+    "commands": [
+      {
+        "commandLine": "cd ${current.project.path} && make run",
+        "name": "run",
+        "attributes": {
+          "goal": "Run"
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "cd ${current.project.path} && make clean && make",
+        "name": "build",
+        "attributes": {
+          "goal": "Run"
+        },
+        "type": "custom"
+      }
+    ],
+    "links": []
+  },
+  "policies": {
+    "create": "perUser"
+  },
+  "creator": {
+    "name": "lukas.krawczyk",
+    "email": "lukas.krawczyk@fh-dortmund.de",
+    "created": 1512128359849,
+    "userId": "4af768e5-6319-45ee-adde-28fe033f8e29"
+  }
+}

@@ -31,6 +31,51 @@
     "projects": [
       {
         "links": [],
+        "name": "openmp_003",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_003.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_003",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "openmp_002",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_002.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_002",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      },
+      {
+        "links": [],
+        "name": "openmp_001",
+        "attributes": {},
+        "type": "blank",
+        "source": {
+          "location": "https://gitlab.idial.institute/ESMDPS/openmp_001.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "path": "/openmp_001",
+        "description": "",
+        "problems": [],
+        "mixins": []
+      }
+      {
+        "links": [],
         "name": "mpi_003",
         "attributes": {},
         "type": "blank",
@@ -95,6 +140,9 @@
       }
     ],
     "links": []
+  },
+  "policies": {
+    "create": "perUser"
   },
   "creator": {
     "name": "lukas.krawczyk",

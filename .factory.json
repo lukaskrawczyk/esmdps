@@ -1,33 +1,6 @@
 {
   "v": "4.0",
-  "name": "esmdps",
   "workspace": {
-    "defaultEnv": "default",
-    "environments": {
-      "default": {
-        "machines": {
-          "dev-machine": {
-            "attributes": {
-              "memoryLimitBytes": "2147483648"
-            },
-            "servers": {},
-            "volumes": {},
-            "installers": [
-              "org.eclipse.che.exec",
-              "org.eclipse.che.terminal",
-              "org.eclipse.che.ws-agent",
-              "org.eclipse.che.ssh"
-            ],
-            "env": {}
-          }
-        },
-        "warnings": [],
-        "recipe": {
-          "location": "lkrawczyk/esmdps",
-          "type": "dockerimage"
-        }
-      }
-    },
     "projects": [
       {
         "links": [],
@@ -73,7 +46,7 @@
         "description": "",
         "problems": [],
         "mixins": []
-      }
+      },
       {
         "links": [],
         "name": "mpi_003",
@@ -120,7 +93,32 @@
         "mixins": []
       }
     ],
-    "name": "esmdps",
+    "defaultEnv": "default",
+	"name": "esmdps",
+    "environments": {
+      "default": {
+        "machines": {
+          "dev-machine": {
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            },
+            "servers": {},
+            "volumes": {},
+            "installers": [
+              "org.eclipse.che.exec",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.ssh"
+            ],
+            "env": {}
+          }
+        },
+        "recipe": {
+          "location": "lkrawczyk/esmdps",
+          "type": "dockerimage"
+        }
+      }
+    },
     "commands": [
       {
         "commandLine": "cd ${current.project.path} && make run",
@@ -146,8 +144,6 @@
   },
   "creator": {
     "name": "lukas.krawczyk",
-    "email": "lukas.krawczyk@fh-dortmund.de",
-    "created": 1512128359849,
-    "userId": "4af768e5-6319-45ee-adde-28fe033f8e29"
+    "email": "lukas.krawczyk@fh-dortmund.de"
   }
 }

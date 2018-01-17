@@ -116,7 +116,7 @@
         "mixins": []
       }
     ],
-	"name": "esmdps",
+    "name": "esmdps",
     "commands": [
       {
         "commandLine": "cd ${current.project.path} && make run",

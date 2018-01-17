@@ -1,6 +1,29 @@
 {
   "v": "4.0",
   "workspace": {
+    "environments": {
+      "default": {
+        "recipe": {
+          "location": "lkrawczyk/esmdps",
+          "type": "dockerimage"
+        },
+        "machines": {
+          "dev-machine": {
+            "servers": {},
+            "agents": [
+              "org.eclipse.che.exec",
+              "org.eclipse.che.terminal",
+              "org.eclipse.che.ws-agent",
+              "org.eclipse.che.ssh"
+            ],
+            "attributes": {
+              "memoryLimitBytes": "2147483648"
+            }
+          }
+        }
+      }
+    },
+    "defaultEnv": "default",
     "projects": [
       {
         "links": [],
@@ -93,32 +116,7 @@
         "mixins": []
       }
     ],
-    "defaultEnv": "default",
 	"name": "esmdps",
-    "environments": {
-      "default": {
-        "machines": {
-          "dev-machine": {
-            "attributes": {
-              "memoryLimitBytes": "2147483648"
-            },
-            "servers": {},
-            "volumes": {},
-            "installers": [
-              "org.eclipse.che.exec",
-              "org.eclipse.che.terminal",
-              "org.eclipse.che.ws-agent",
-              "org.eclipse.che.ssh"
-            ],
-            "env": {}
-          }
-        },
-        "recipe": {
-          "location": "lkrawczyk/esmdps",
-          "type": "dockerimage"
-        }
-      }
-    },
     "commands": [
       {
         "commandLine": "cd ${current.project.path} && make run",
@@ -140,7 +138,7 @@
     "links": []
   },
   "policies": {
-    "create": "perUser"
+    "create": "perClick"
   },
   "creator": {
     "name": "lukas.krawczyk",

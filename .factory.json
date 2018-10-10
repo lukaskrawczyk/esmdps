@@ -17,7 +17,7 @@
               "org.eclipse.che.ssh"
             ],
             "attributes": {
-              "memoryLimitBytes": "2147483648"
+              "memoryLimitBytes": "1073741824"
             }
           }
         }

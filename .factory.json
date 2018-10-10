@@ -138,7 +138,7 @@
     "links": []
   },
   "policies": {
-    "create": "perClick"
+    "create": "perUser"
   },
   "creator": {
     "name": "lukas.krawczyk",

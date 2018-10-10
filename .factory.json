@@ -9,17 +9,14 @@
         },
         "machines": {
           "dev-machine": {
-            "servers": {},
-            "agents": [
-              "org.eclipse.che.exec",
-              "org.eclipse.che.terminal",
-              "org.eclipse.che.ws-agent",
-              "org.eclipse.che.ssh"
-            ],
             "attributes": {
-              "memoryLimitBytes": "805306368"
-            }
-          }
+              "memoryLimitBytes": 1073741824
+            },
+            "servers": {},
+            "volumes": {},
+            "installers": [],
+            "env": {}          
+	  }
         }
       }
     },
